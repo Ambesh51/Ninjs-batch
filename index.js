@@ -404,9 +404,7 @@
 //     console.log(fruits)
 //     fruits.reverse()
 //     console.log(fruits);
-
 // var temp =[5,10,10,3,1000,3,9];
-
 // temp.sort(function(a,b){return b-a });
 
 // console.log(temp);
