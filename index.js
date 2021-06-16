@@ -413,3 +413,252 @@
 
 
 
+
+// var fruits= ["apple","mango","orange","apple","grapes"];
+
+// fruits.splice(0,1,"orange")
+// console.log(fruits)
+
+// var fruit=["mango","orange","grapes","apple"];
+// var temp = fruit.slice(1,3);
+// console.log(temp);
+
+
+//********************************14-06-21
+
+//***************Index of
+// var fruit=["mango","orange","mango","grapes","grapes","apple","grapes","banan"];
+// // var temp = (fruit.indexOf("grapes"));// aage se start karta
+// // // var temp = fruit.lastIndexOf("grapees")// piche se karta hai
+// console.log(temp);k
+// fruit[temp]="kiwi";
+// console.log(fruit);
+
+
+
+// (function(){
+//     console.log("hello");
+// })()
+
+// temp()
+// var temp =function(){console.log("hello")}
+// temp()
+
+// var a=11;
+
+// function myfun(val){
+//     // console.log(val);//print
+//     val(); 
+//     console.log(a);
+// }
+
+
+// function print(){
+//     console.log("print");
+
+//      {
+//          var a=10;
+//          console.log(a);
+//      }
+//      fun(a);
+// }
+
+// myfun(print);
+
+// console.log(a);
+
+
+
+// function fun(a){
+
+//     console.log(a);
+//     {
+//         console.log(a);
+//     }
+// }
+// print, 10, 11,11, 11, 11
+
+
+// iife + annonumous + recursion
+
+// (function(val){
+
+// if(val>0){
+    
+//     console.log(val);
+//     arguments.callee(--val);
+
+// }
+// console.log(val);
+
+// })(11);
+
+
+// function myfun(n){
+//     if(n>0){
+//         console.log(n);
+//         myfun(--n)
+//     }
+// }
+
+// myfun(10);
+
+
+
+//******************************Loop */
+// var loop =[1,2,3,4,5];
+
+
+// console.log(loop.length)
+
+// for(var a=0; a<loop.length;a++){
+//     console.log(a)
+// }
+
+
+// for of loop ------>  value of array
+// for in loop ------>  key value pair ke sath perform karna hai
+// // for each loop
+
+
+// let fruit = ["mango","apple","kiwi","banana", function(){console.log("hello")}];
+// //////////->  0        1       2       3
+// // for( var a=0; a<fruit.length;a++){
+    
+// //     console.log("fruit", fruit[1]);
+// // }
+
+// for( var a of fruit){
+
+//     console.log(a);
+
+// }
+
+// var name =1234;
+// name="ambesh"
+
+// for( var a of name){
+
+//     console.log(a);
+
+// }
+
+// object overview 
+
+// var std ={
+//     arr:[],
+//     temp:function(){},
+//     temp1:true
+// }
+// console.log(std)
+// // std.name="akhsi";
+// console.log(std)
+// std["name"]="joshi"
+// std["name"]="joshi"
+// for in
+
+// var std ={
+//     id:123,
+//     name:"khushi& sri",
+//     address:"git college",
+//     phon_no:"807780105"
+// }
+// // console.log(std);
+// // var arr= [10,13,13,1,4,354,5665,6]
+
+
+// for( var e in std){
+// // console.log();
+// // console.log( e std[e] )
+// console.log(` ${e} : ${std[e]}`)
+// }
+
+
+//**************16-06-21 */
+
+// forEach
+// each vale
+//*** break never use
+
+// var num=[1,2,3,4];
+
+// var squareNo=[];
+
+// num.forEach(function (val){
+
+//     squareNo.push(val*val);
+
+// })
+// console.log(squareNo);
+
+
+// map , filter, reduce ---> method
+
+// map->
+// 1) operation --> each value per perform hota hai
+// 2) it will make new array or return new array
+
+// var new_fill = [1,2,3,4,5,6,7,8,112,12,15,18];
+
+
+// var new_arr = new_fill.map(function(item){
+//  if(item>10){
+//     return item-1; 
+//  }
+                     
+                    
+// })
+
+// console.log(new_arr);
+
+
+
+//filter
+// 1) operation--> can filter the value by logical
+// 2) it will make new array
+
+// var new_fill = [{name:"ambesh"},{name:"tech-stack"},3,4,5,6,7,8,112,12,15,18];
+
+// var arr_filter = new_fill.filter((item)=>{ return item.name=="ambesh"})
+
+// console.log(arr_filter);
+
+
+// reduce
+// single value return
+
+// var new_reduce = [1,2,3,4,5,6,7,8]
+
+// var sum = new_reduce.reduce(function(total,item){
+//     return total + item;
+// })
+
+// console.log(sum);
+
+
+// lexical scoping
+
+// function rishab(){
+//     var name="tech-stack";
+//     function adi(){
+//         var name="adi";
+//         console.log(name);
+//         return 1;
+//     }
+// return adi;
+ 
+// }
+
+// var temp= rishab();
+//  console.log(temp());
+
+// //lexical scoping
+// //clourse
+// //temporal dead zone
+// {
+
+// }
+
+
+// console.log(a);
+// var a
